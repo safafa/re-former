@@ -14,8 +14,8 @@
     <%=label(:user, :username, "Your username :", value: "test")%>
     <%= form.text_field :username %><br />
     <%= form.label :password %>:
-    <%= form.text_field :password %><br />
+    <%= form.password_field :password %><br />
     <%= form.label :email %>:
-    <%= form.text_field :email, placeholder: "a@gmail.com"%><br />
+    <%= form.email_field :email, placeholder: "a@gmail.com"%><br />
     <%= form.submit "Submit" %>
   <% end %>

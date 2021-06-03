@@ -12,36 +12,36 @@
   
   <%# form_tag("/users", method: "post", remote: true) do %> 
   <%# label_tag 'username' %> 
-      <%# text_field(:user, :username)%>
+      <%# text_field_tag(:user, :username)%>
   </br>
   <%# label_tag "password" %> 
   </br>
-  <%# text_field(:user, :password)%>
+  <%# password_field_tag(:user, :password)%>
   </br>
   <%# label_tag "email" %> 
   </br>
-  <%# text_field(:user, :email)%>
+  <%# email_field_tag(:user, :email)%>
   </br>
   <%# submit_tag("Submit") %> 
   <%# end %> 
 
-  <form action="/users" method="post" accept-charset="UTF-8" data-remote="true">
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="user[username]"><br><br>
-  <label for="password">Password:</label>
-  <input type="text" id="password" name="user[password]"><br><br>
-  <label for="email">Email:</label>
-  <input type="Email" id="email" name="user[email]"><br><br>
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  <input type="submit" value="Submit">
-  </form>   
-  
+  <%#<form action=users_path method="post" accept-charset="UTF-8" data-remote="true">%>
+  <%#<label for="username">Username:</label>%>
+  <%#<input type="text" id="username" name="user[username]"><br><br>%>
+  <%#<label for="password">Password:</label>%>
+  <%#<input type="text" id="password" name="user[password]"><br><br>%>
+  <%#<label for="email">Email:</label>%>
+  <%#<input type="Email" id="email" name="user[email]"><br><br>%>
+  <%#<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>
+  <%#<input type="submit" value="Submit">%>
+  <%#</form>%>
+
 <%= form_with scope: :user, url: users_path do |form| %>
   <%=label(:user, :username, "Your username :", value: "test")%>
   <%= form.text_field :username %><br />
   <%= form.label :password %>:
-  <%= form.text_field :password %><br />
+  <%= form.password_field :password %><br />
   <%= form.label :email %>:
-  <%= form.text_field :email, placeholder: "a@gmail.com"%><br />
+  <%= form.email_field :email, placeholder: "a@gmail.com"%><br />
   <%= form.submit "Submit" %>
 <% end %>

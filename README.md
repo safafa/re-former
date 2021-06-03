@@ -1,4 +1,4 @@
-Micro Reddit
+Forms Project
 
     This project puts our knowledge of forms, models, controllers and using form_helpers to the tests. It is an application where a user can create a user and edit it.
 
@@ -12,7 +12,7 @@ Getting Started
 To get the local copy of this project you just need to clone it by running the following command from your terminal git clone https://github.com/safafa/re-former/tree/form1
 Installation
 
-After you have cloned the repository, you need to install all the available gems by running the command bundle install from the root of the project. And for creating the DB via rails run db:create and migrate it via run rails db:migrate
+After you have cloned the repository, you need to install all the available gems by running the command $'bundle install' from the root of the project. And for creating the DB via rails run $'rails db:create' and migrate it via run rails db:migrate
 Setup
 
 To interact with the database you need to use the rails console by running the command rails console from the root of the project.
