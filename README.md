@@ -24,7 +24,7 @@ After you have cloned the repository, you need to :
 - in the browser enter 'http://localhost:3000/users/1/edit to edit existing user
 - in the console press 'ctrl+c' to stop the live server from working
 - run : <code> rails console </code> to start the rails console
-- run : <User.all> to see existing users
+- run : 'User.all' to see existing users
 
 Setup
 
