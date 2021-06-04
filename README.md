@@ -20,6 +20,12 @@ After you have cloned the repository, you need to :
 - run : <code> bundle install </code> to install all the available gems 
 - run : <code> rails db:migrate </code> to migrate the database
 - run : <code> rails server </code> to start the server
+- in the browser enter 'http://localhost:3000/users/new' to create a new user
+- in the browser enter 'http://localhost:3000/users/1/edit to edit existing user
+- in the console press 'ctrl+c' to stop the live server from working
+- run : <code> rails console </code> to start the rails console
+- run : <User.all> to see existing users
+
 Setup
 
 To interact with the database from the terminal you need to use the rails console by running the command rails console from the root of the project.
